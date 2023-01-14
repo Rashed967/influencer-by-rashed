@@ -1,23 +1,28 @@
 /* global css  */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box
 }
-a{
+
+a {
     text-decoration: none
 }
-ul li{
+
+ul li {
     list-style: none;
 }
-:root{
-    --primary-color:  #3A3A3A;
+
+:root {
+    --primary-color: #3A3A3A;
     --secondary-color: #fff;
     --third-color: #E02C6D;
     --fourth-color: #787885;
-    --fifth-color:#FB8200;
+    --fifth-color: #FB8200;
+    --sixth-color: #0A0826;
 }
-.primary-btn{
+
+.primary-btn {
     font-size: 16px;
     font-weight: 700;
     padding: 12px 23px;
@@ -26,41 +31,46 @@ ul li{
     border: 0;
     border-radius: 3vh;
 }
-.container-70{
+
+.container-70 {
     width: 70%;
     margin: 30px auto 30px;
 }
 
 /* fonts family  */
-body{
+body {
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
     font-family: 'Poppins', sans-serif;
 }
 
 /* nav css start  */
-.container-80{
+.container-80 {
     width: 80%;
     margin: 30px auto 30px;
-    
+
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav .header-text{
+
+.nav .header-text {
     font-size: 2.7vh;
     font-weight: 700;
     color: var(--primary-color);
 
 }
-.nav ul{
+
+.nav ul {
     display: flex;
     gap: 30px;
     justify-content: center;
     align-items: center;
 }
-.nav ul li{
+
+.nav ul li {
     color: var(--primary-color);
     font-size: 1.7vh;
     font-weight: 600;
@@ -68,32 +78,38 @@ body{
 }
 
 /* banner part css start  */
-.banner{
+.banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 100px;
 
 }
-.banner-content, .banner-img{
+
+.banner-content,
+.banner-img {
     width: 37%;
 }
-.banner-title{
+
+.banner-title {
     font-size: 52px;
     line-height: 70px;
     font-weight: 700;
     color: var(--primary-color);
 }
-.banner-description{
+
+.banner-description {
     color: var(--primary-color);
     margin: 3vh 0;
     font-weight: 600;
 }
-.banner-img{
+
+.banner-img {
     position: relative;
     margin-left: 40px;
 }
-.banner-img > .banner-circle{
+
+.banner-img>.banner-circle {
     background-color: aqua;
     border-radius: 50%;
     position: absolute;
@@ -106,17 +122,19 @@ body{
     outline-offset: 60px;
 
 }
-.banner-img img{
+
+.banner-img img {
     width: 75%;
     padding-top: 6vh;
 }
 
 /* partner section css start  */
-.partner-section{
+.partner-section {
     margin: 10vh 0;
 
 }
-.partners{
+
+.partners {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -126,106 +144,207 @@ body{
 }
 
 /* items section css start  */
-.item-section-title{
+.item-section-title {
     text-align: center;
     font-size: 2.9vh;
     font-weight: 600;
     color: var(--primary-color);
 }
-.items-container{
+
+.items-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4vh;
     margin-top: 5vh;
 }
-.item{
+
+.item {
     padding: 1.5vh;
     /* width: 100%; */
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
 }
-.item-img img{
+
+.item-img img {
     width: 100%;
 }
-.item-details{
+
+.item-details {
     margin-top: 1.3vh;
     width: 70%;
 }
-.item-name{
+
+.item-name {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--primary-color);
 }
-.item-price{
+
+.item-price {
     font-size: 1.4rem;
     color: rgba(0, 0, 0, 0.87);
     margin: 1vh 0;
 }
 
-.item-rating .fa-solid{
+.item-rating .fa-solid {
     font-size: 14px;
 }
-.item-rating .field{
+
+.item-rating .field {
     color: var(--fifth-color);
 }
-.item-rating .half{
+
+.item-rating .half {
     color: var(--fifth-color);
 }
-.item-rating .rating-number{
+
+.item-rating .rating-number {
     color: #5E6366;
     font-size: 14px;
     font-weight: 600;
 }
-.item-description{
+
+.item-description {
     font-size: 14px;
     font-weight: 700;
     color: var(--fourth-color);
     margin-top: 1vh;
 }
 
+.btn-box {
+    margin-top: 25px;
 
+    text-align: right;
+}
+
+.btn-box .primary-btn {
+    background-color: transparent;
+    color: var(--third-color);
+    font-size: 2.7vh;
+}
+
+/* featured section css start */
+.featured-section {
+    display: flex;
+    gap: 7vh;
+}
+
+.featured-img {
+    width: 40%;
+}
+
+.featured-img img {
+    width: 100%;
+}
+
+.featured-content {
+    width: 60%;
+}
+
+.featured-title {
+    font-size: 4.2vh;
+    font-weight: 600;
+    margin-top: 4vh;
+}
+
+.featured-description {
+    margin: 2vh 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--third-color);
+}
+
+.featured-content>.primary-btn {
+    border-radius: 0;
+}
+
+
+/* footer part css start  */
+footer{
+    background-color: var(--sixth-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 7vh 0;
+}
+.footer-title{
+    font-size: 4vh;
+}
+.copyright-text{
+    margin: 2vh 15vh;
+    font-size: 2vh;
+}
+.footer-icons{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    gap: 2.5vh;
+}
 
 /*-----------------------------------------------------
                   Responsive devices css
   ---------------------------------------------------       */
 @media only screen and (max-width : 480px) {
-    .show-small{
+    .show-small {
         display: block;
     }
-    .hide-small{
+
+    .hide-small {
         display: none;
     }
-    .banner{
+
+    .banner {
         flex-direction: column-reverse;
         margin-top: 50px;
         align-items: flex-start;
         gap: 50px;
     }
-    .banner-content, .banner-img{
+
+    .banner-content,
+    .banner-img {
         width: 100%;
     }
-    .banner-content{
+
+    .banner-content {
         text-align: center;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 4vh;
         line-height: 6vh;
     }
-    .banner-description{
+
+    .banner-description {
         line-height: 3vh;
     }
 
     /* partners section responsive start  */
-    .partners{
+    .partners {
         justify-content: center;
         gap: 30px;
 
     }
 
     /* items section responsive start  */
-    .items-container{
+    .items-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 4vh;
     }
-    
+
+    /* featured section responsive css start */
+    .featured-section {
+        flex-direction: column-reverse;
+        gap: 7vh;
+    }
+
+    .featured-img,
+    .featured-content {
+        width: 100%;
+    }
+
+    .featured-content {
+        text-align: center;
+    }
+    .featured-description{
+        margin: 3vh 0;
+    }
 }
