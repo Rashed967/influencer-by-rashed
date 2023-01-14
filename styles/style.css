@@ -125,9 +125,69 @@ body{
     border-bottom: 1px solid #78788521;
 }
 
+/* items section css start  */
+.item-section-title{
+    text-align: center;
+    font-size: 2.9vh;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.items-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vh;
+    margin-top: 5vh;
+}
+.item{
+    padding: 1.5vh;
+    /* width: 100%; */
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.item-img img{
+    width: 100%;
+}
+.item-details{
+    margin-top: 1.3vh;
+    width: 70%;
+}
+.item-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.item-price{
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 1vh 0;
+}
+
+.item-rating .fa-solid{
+    font-size: 14px;
+}
+.item-rating .field{
+    color: var(--fifth-color);
+}
+.item-rating .half{
+    color: var(--fifth-color);
+}
+.item-rating .rating-number{
+    color: #5E6366;
+    font-size: 14px;
+    font-weight: 600;
+}
+.item-description{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--fourth-color);
+    margin-top: 1vh;
+}
 
 
-/* Responsive devices  */
+
+/*-----------------------------------------------------
+                  Responsive devices css
+  ---------------------------------------------------       */
 @media only screen and (max-width : 480px) {
     .show-small{
         display: block;
@@ -160,6 +220,12 @@ body{
         justify-content: center;
         gap: 30px;
 
+    }
+
+    /* items section responsive start  */
+    .items-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4vh;
     }
     
 }
