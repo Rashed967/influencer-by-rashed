@@ -146,7 +146,7 @@ body {
 /* items section css start  */
 .item-section-title {
     text-align: center;
-    font-size: 2.9vh;
+    font-size: 4vh;
     font-weight: 600;
     color: var(--primary-color);
 }
@@ -346,5 +346,30 @@ footer{
     }
     .featured-description{
         margin: 3vh 0;
+    }
+}
+
+/* ------------------------
+tablet device responsive 
+---------------------------------------------- */
+@media only screen and (min-width : 481px) and (max-width : 768px) {
+    .items-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vh;
+        margin-top: 5vh;
+    }
+    .featured-img {
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+    .hide-md{
+        display: none;
+    }
+    /* partners section responsive start  */
+    .partners {
+        justify-content: center;
+        gap: 30px;
+
     }
 }
